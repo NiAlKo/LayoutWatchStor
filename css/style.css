@@ -87,7 +87,7 @@ h6 {
 }
 
 @font-face {
-  font-family: 'Prata';
+  font-family: "Prata";
   src: local("Prata Regular"), local("Prata-Regular"), url("./../sours/fonts/Prata/Prata-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
@@ -95,7 +95,7 @@ h6 {
 }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   src: local("Roboto Bold"), local("Roboto-Bold"), url("./../sours/fonts/Roboto/Roboto-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
@@ -103,7 +103,7 @@ h6 {
 }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   src: local("Roboto Medium"), local("Roboto-Medium"), url("./../sours/fonts/Roboto/Roboto-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
@@ -111,7 +111,7 @@ h6 {
 }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   src: local("Roboto"), local("Roboto-Regular"), url("./../sours/fonts/Roboto/Roboto-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
@@ -119,14 +119,14 @@ h6 {
 }
 
 @font-face {
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   src: local("Playfair Display Regular"), local("PlayfairDisplay-Regular"), url("./../sours/fonts/Playfair_Display/PlayfairDisplay-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
-.page-header, .main-nav, .main-nav__list, .user-nav__list, .promo, .popular__list, .advantage, .scroll-controll, .news, .social-block__list, .page-footer__wrapper {
+.page-header, .main-nav, .main-nav__list, .user-nav__list, .promo, .popular__list, .advantage__wrapper, .scroll-controll, .news, .social-block__list, .page-footer__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -152,7 +152,7 @@ h6 {
   font-weight: 400;
   font-size: 32px;
   line-height: 43px;
-  color: #1B1A17;
+  color: #1b1a17;
 }
 
 .promo__prise, .promo__specifications, .card__prise, .scroll-controll__position {
@@ -160,7 +160,7 @@ h6 {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  color: #1B1A17;
+  color: #1b1a17;
 }
 
 .link-form {
@@ -205,7 +205,7 @@ h6 {
 
 .main-nav__logo {
   display: inline-block;
-  margin: -4px  20px 0 0;
+  margin: -4px 20px 0 0;
 }
 
 .main-nav__item {
@@ -249,15 +249,71 @@ h6 {
   position: absolute;
   border-radius: 50%;
   display: block;
-  background: #E6C8B4;
+  background: #e6c8b4;
   width: 13px;
   height: 13px;
   top: 0;
   right: 35px;
   font-size: 8px;
   text-align: center;
-  color: #1B1A17;
+  color: #1b1a17;
   line-height: 13px;
+}
+
+.page-header, .main-nav, .main-nav__list, .user-nav__list, .promo, .popular__list, .advantage__wrapper, .scroll-controll, .news, .social-block__list, .page-footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-header, .main, .card__img, .scroll-controll__position, .page-footer__wrapper {
+  margin: 0 auto;
+}
+
+.promo__wrapper--left, .promo__wrapper--right {
+  margin: auto 0;
+}
+
+.page-header, .main {
+  width: 1366px;
+}
+
+.promo__title, .popular__title, .card__title, .card__link, .advantage__title, .news__text--high {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 43px;
+  color: #1b1a17;
+}
+
+.promo__prise, .promo__specifications, .card__prise, .scroll-controll__position {
+  font-family: "Prata";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1b1a17;
+}
+
+.link-form {
+  width: 205px;
+  height: 64px;
+  padding: 26px 38px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.promo__description {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(27, 26, 23, 0.82);
 }
 
 /* ================Section Promo============== */
@@ -286,7 +342,7 @@ h6 {
   height: 1px;
   width: 50px;
   margin-right: 15px;
-  background-color: #8B8371;
+  background-color: #8b8371;
   display: inline-block;
   vertical-align: middle;
 }
@@ -328,7 +384,7 @@ h6 {
   width: 50px;
   height: 1px;
   margin-left: 15px;
-  background-color: #8B8371;
+  background-color: #8b8371;
   display: inline-block;
   vertical-align: middle;
 }
@@ -349,7 +405,7 @@ h6 {
   height: 1px;
   width: 50px;
   margin-right: 15px;
-  background-color: #8B8371;
+  background-color: #8b8371;
   display: inline-block;
   vertical-align: middle;
 }
@@ -359,6 +415,62 @@ h6 {
   height: 13px;
   display: inline-block;
   background: url(./../img/ruble.svg) no-repeat;
+}
+
+.page-header, .main-nav, .main-nav__list, .user-nav__list, .promo, .popular__list, .advantage__wrapper, .scroll-controll, .news, .social-block__list, .page-footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-header, .main, .card__img, .scroll-controll__position, .page-footer__wrapper {
+  margin: 0 auto;
+}
+
+.promo__wrapper--left, .promo__wrapper--right {
+  margin: auto 0;
+}
+
+.page-header, .main {
+  width: 1366px;
+}
+
+.promo__title, .popular__title, .card__title, .card__link, .advantage__title, .news__text--high {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 43px;
+  color: #1b1a17;
+}
+
+.promo__prise, .promo__specifications, .card__prise, .scroll-controll__position {
+  font-family: "Prata";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1b1a17;
+}
+
+.link-form {
+  width: 205px;
+  height: 64px;
+  padding: 26px 38px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.promo__description {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(27, 26, 23, 0.82);
 }
 
 /* ================Section Popular============== */
@@ -380,7 +492,7 @@ h6 {
   font-size: 16px;
   line-height: 19px;
   color: #444240;
-  border-bottom: 1px solid #C4C0B6;
+  border-bottom: 1px solid #c4c0b6;
   padding-bottom: 11.5px;
   position: absolute;
   bottom: 578px;
@@ -446,20 +558,89 @@ h6 {
   height: 1px;
   width: 30px;
   margin-right: 18px;
-  background-color: #8B8371;
+  background-color: #8b8371;
   display: inline-block;
   vertical-align: middle;
 }
 
+.page-header, .main-nav, .main-nav__list, .user-nav__list, .promo, .popular__list, .advantage__wrapper, .scroll-controll, .news, .social-block__list, .page-footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-header, .main, .card__img, .scroll-controll__position, .page-footer__wrapper {
+  margin: 0 auto;
+}
+
+.promo__wrapper--left, .promo__wrapper--right {
+  margin: auto 0;
+}
+
+.page-header, .main {
+  width: 1366px;
+}
+
+.promo__title, .popular__title, .card__title, .card__link, .advantage__title, .news__text--high {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 43px;
+  color: #1b1a17;
+}
+
+.promo__prise, .promo__specifications, .card__prise, .scroll-controll__position {
+  font-family: "Prata";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1b1a17;
+}
+
+.link-form {
+  width: 205px;
+  height: 64px;
+  padding: 26px 38px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.promo__description {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(27, 26, 23, 0.82);
+}
+
 /* ================Section Advantage============== */
-.advantage {
-  background: url(./../img/lines_banner.png) right no-repeat, url(./../img/background_banner_2.png) right no-repeat, url(./../img/background_banner_1.png) left no-repeat;
-  background-size: contain;
+.advantage__bg-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 468px;
+  height: 519px;
+  background-color: #f7f5ef;
+}
+
+.advantage__bg-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 898px;
+  height: 519px;
+  background: #fdfdfb url(./../img/lines_banner.png) no-repeat right;
 }
 
 .advantage__left {
-  width: 468px;
-  padding: 52px 0 53px 177px;
+  z-index: 10;
+  margin: 52px 0 53px 177px;
 }
 
 .advantage__img {
@@ -470,20 +651,17 @@ h6 {
 .advantage__scroll-controll {
   position: absolute;
   bottom: 21px;
-  left: 84px;
+  left: 552px;
 }
 
 .advantage__right {
-  width: 898px;
-  position: relative;
+  z-index: 10;
+  margin-right: 222px;
 }
 
 .advantage__wrapper {
-  width: 377px;
-  height: 519px;
-  margin-left: 299px;
-  border: 1px solid transparent;
-  /* !Doesn't work without it. Why?  */
+  position: relative;
+  top: 0;
 }
 
 .advantage__title {
@@ -497,7 +675,7 @@ h6 {
 
 .advantage__link {
   display: block;
-  background-color: #D4B098;
+  background-color: #d4b098;
 }
 
 .scroll-controll {
@@ -516,6 +694,62 @@ h6 {
 .btn {
   width: 5px;
   height: 10px;
+}
+
+.page-header, .main-nav, .main-nav__list, .user-nav__list, .promo, .popular__list, .advantage__wrapper, .scroll-controll, .news, .social-block__list, .page-footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-header, .main, .card__img, .scroll-controll__position, .page-footer__wrapper {
+  margin: 0 auto;
+}
+
+.promo__wrapper--left, .promo__wrapper--right {
+  margin: auto 0;
+}
+
+.page-header, .main {
+  width: 1366px;
+}
+
+.promo__title, .popular__title, .card__title, .card__link, .advantage__title, .news__text--high {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 43px;
+  color: #1b1a17;
+}
+
+.promo__prise, .promo__specifications, .card__prise, .scroll-controll__position {
+  font-family: "Prata";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1b1a17;
+}
+
+.link-form {
+  width: 205px;
+  height: 64px;
+  padding: 26px 38px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.promo__description {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(27, 26, 23, 0.82);
 }
 
 /* ================Section News============== */
@@ -613,7 +847,7 @@ h6 {
   line-height: 16px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: #FFF;
+  color: #fff;
   margin-bottom: 33px;
 }
 
@@ -630,4 +864,3 @@ h6 {
 .page-footer__column--delivery {
   width: 180px;
 }
-/*# sourceMappingURL=style.css.map */

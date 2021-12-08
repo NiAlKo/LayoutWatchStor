@@ -1,0 +1,61 @@
+/* ================FOOTER============== */
+.page-footer {
+  min-width: 1366px;
+  background-color: #444240;
+
+  &__column {
+    margin: 79px 0 67px 0;
+  }
+
+  &__colomn--logo {
+    margin-top: 67px;
+    width: 160px;
+  }
+
+  &__logo {
+    margin-bottom: 23px;
+    width: 130px;
+    height: 34px;
+  }
+
+  &__wrapper {
+    @extend %leveler, %flx;
+    width: 998px;
+  }
+
+  &__column--about {
+    width: 123px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 33px;
+  }
+
+  // &__list {
+
+  // }
+
+  // &__item {
+
+  // }
+
+  &__link {
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  &__column--buyers {
+    width: 181px;
+  }
+
+  &__column--delivery {
+    width: 180px;
+  }
+}

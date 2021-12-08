@@ -1,45 +1,45 @@
 // Fonts for page
 @font-face {
-    font-family: 'Prata';
-    src: local('Prata Regular'), local('Prata-Regular'),
-        url('./../sours/fonts/Prata/Prata-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Prata";
+  src: local("Prata Regular"), local("Prata-Regular"),
+    url("./../sours/fonts/Prata/Prata-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: local('Roboto Bold'), local('Roboto-Bold'),
-        url('./../sours/fonts/Roboto/Roboto-Bold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Roboto";
+  src: local("Roboto Bold"), local("Roboto-Bold"),
+    url("./../sours/fonts/Roboto/Roboto-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: local('Roboto Medium'), local('Roboto-Medium'),
-        url('./../sours/fonts/Roboto/Roboto-Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Roboto";
+  src: local("Roboto Medium"), local("Roboto-Medium"),
+    url("./../sours/fonts/Roboto/Roboto-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: local('Roboto'), local('Roboto-Regular'),
-        url('./../sours/fonts/Roboto/Roboto-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Roboto";
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("./../sours/fonts/Roboto/Roboto-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
-    font-family: 'Playfair Display';
-    src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'),
-        url('./../sours/fonts/Playfair_Display/PlayfairDisplay-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Playfair Display";
+  src: local("Playfair Display Regular"), local("PlayfairDisplay-Regular"),
+    url("./../sours/fonts/Playfair_Display/PlayfairDisplay-Regular.woff2")
+      format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
-

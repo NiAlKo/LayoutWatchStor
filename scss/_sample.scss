@@ -1,0 +1,70 @@
+// Sample
+
+// visual assistant
+%vis-ast {
+  border: 1px solid black;
+}
+// clear fix
+// %clr-fx {
+//   content: "";
+//   display: table;
+//   clear: right;
+// }
+
+// flex space-between
+%flx {
+  display: flex;
+  justify-content: space-between;
+}
+// flex-center
+// %flx-c {
+//   display: flex;
+//   justify-content: center;
+// }
+// level-align
+%leveler {
+  margin: 0 auto;
+}
+// vertical-align
+%vertical-leveler {
+  margin: auto 0;
+}
+// size-background
+%sz-pg {
+  width: 1366px;
+}
+// style-title Playfair Display
+%stl-tl {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 43px;
+  color: #1b1a17;
+}
+// style title Prta
+%stl-prs {
+  font-family: "Prata";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1b1a17;
+}
+// style link
+%stl-linkForm {
+  width: 205px;
+  height: 64px;
+  padding: 26px 38px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+// style decription
+%stl-dscrptn {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(27, 26, 23, 0.82);
+}

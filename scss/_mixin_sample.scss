@@ -1,0 +1,57 @@
+// Sample mixin \\
+
+// Grid
+@mixin abc {
+  &:first-child {
+    grid-area: a;
+  }
+  &:nth-child(2) {
+    grid-area: b;
+  }
+  &:last-child {
+    grid-area: c;
+  }
+}
+
+//last child
+@mixin lst-chld {
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+// line before for header
+@mixin bfr-ln {
+  &::before {
+    content: "";
+    height: 1px;
+    width: 50px;
+    margin-right: 15px;
+    background-color: #8b8371;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+// line before for link
+@mixin bfr-ln-lnk {
+  &::before {
+    content: "";
+    height: 1px;
+    width: 30px;
+    margin-right: 18px;
+    background-color: #8b8371;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+// line after
+@mixin afr-ln {
+  &::after {
+    content: "";
+    width: 50px;
+    height: 1px;
+    margin-left: 15px;
+    background-color: #8b8371;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}

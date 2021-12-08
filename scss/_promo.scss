@@ -1,0 +1,83 @@
+@import "sample";
+@import "mixin_sample";
+/* ================Section Promo============== */
+.promo {
+  // @extend %vis-ast;
+  margin: 0 114px 0 120px;
+  background: url(./../img/Ellipse.png) no-repeat 55% 20%;
+  @extend %flx;
+  &__wrapper--left {
+    margin-right: 55px;
+    // @extend %vis-ast;
+    @extend %vertical-leveler;
+  }
+  &__wrapper--right {
+    width: 744px;
+    position: relative;
+    // @extend %vis-ast;
+    @extend %vertical-leveler;
+  }
+
+  &__title {
+    width: 408px;
+    @extend %stl-tl;
+    font-size: 45px;
+    line-height: 60px;
+    @include bfr-ln;
+  }
+
+  &__sub-title {
+    margin-left: 65px;
+    width: 154px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  &__description {
+    margin: 39px 0 64px 65px;
+    width: 258px;
+    @extend %stl-dscrptn;
+  }
+
+  &__link {
+    margin-left: 61px;
+    background: #444240;
+  }
+
+  &__img {
+    width: 503px;
+    height: 804px;
+    transform: rotate(-0.18deg);
+    margin-left: 79px;
+    // @extend %vis-ast;
+  }
+
+  &__prise {
+    position: absolute;
+    top: 149px;
+    left: 0px;
+    display: block;
+    @include afr-ln;
+    @extend %stl-prs;
+  }
+
+  &__ruble {
+    margin-left: 7px;
+  }
+
+  &__specifications {
+    position: absolute;
+    bottom: 143px;
+    left: 468px;
+    display: block;
+    @extend %stl-prs;
+    @include bfr-ln;
+  }
+}
+
+.ruble {
+  width: 9.6px;
+  height: 13px;
+  display: inline-block;
+  background: url(./../img/ruble.svg) no-repeat;
+}
