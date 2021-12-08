@@ -1,0 +1,588 @@
+@import "zero-style";
+@import "fonts";
+
+
+// Sample
+
+// visual assistant  
+%vis-ast{
+  border: 1px solid black; 
+}
+// visual assistant 
+
+%flx{
+     display: flex;
+     justify-content: space-between;
+}
+%leveler{
+    margin:  0 auto;
+}
+%vertical-leveler{
+    margin: auto 0;
+}
+%sz-pg{
+    width: 1366px;   
+}
+%stl-tl{
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+    color: #1B1A17;
+}
+
+%stl-prs{
+    font-family: "Prata";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1B1A17;
+}
+%stl-linkForm{
+    width: 205px;
+    height: 64px;
+    padding: 26px 38px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+%stl-dscrptn{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(27, 26, 23, 0.82);
+}
+// Sample mixin \\
+
+// Grid
+@mixin abc {
+
+    &:first-child{
+      grid-area: a;     
+}
+    &:nth-child(2){
+        grid-area: b;
+    }
+    &:last-child{
+        grid-area: c;
+    }
+}
+
+//last child
+@mixin lst-chld{
+    &:last-child{
+    margin-right: 0px;}
+}
+// line before for header
+@mixin bfr-ln{
+    &::before{
+    content: "";
+    height: 1px;
+    width: 50px;
+    margin-right: 15px;
+    background-color: #8B8371;
+    display: inline-block;
+    vertical-align: middle;
+    }
+}
+    // line before for link
+@mixin bfr-ln-lnk{
+    &::before{
+    content: "";
+    height: 1px;
+    width: 30px;
+    margin-right: 18px;
+    background-color: #8B8371;
+    display: inline-block;
+    vertical-align: middle;
+    }
+}
+// line after
+@mixin afr-ln{
+    &::after{
+    content: "";
+    width: 50px;
+    height: 1px;
+    margin-left: 15px;;
+    background-color: #8B8371;
+    display: inline-block;
+    vertical-align: middle;
+    }
+}
+    /* ================HEADER============== */
+  .page-header {
+      margin-bottom: 28px;
+        @extend %leveler, %flx,%sz-pg;
+    &__logo {
+        margin:31px 0 0 97px;
+    }
+       
+    &__main-nav {
+        margin: 35px 0 0 0;
+     // @extend %vis-ast; visual assistant
+    }
+
+    &__user-nav {
+        margin: 35px 100px 0 0;
+    }
+}
+.visually-hidden {
+
+    display: none;
+}
+.main-nav {
+
+    @extend %flx;
+        // @extend %vis-ast; visual assistant
+    &__logo {
+        display: inline-block;
+        margin: -4px  20px 0 0;  
+    }
+
+    &__list {
+        @extend %flx;
+    }
+
+    &__item {
+        margin-right: 65px;
+        @include lst-chld;
+
+    }
+
+    &__link {
+        font-size: 14px;
+        line-height: 16px;
+        color: #555248;
+    }
+}
+
+.logo {
+
+    // &__link {
+    // }
+
+    &__img {
+        width: 104px;
+        height: 26px;   
+    }
+}
+.user-nav {
+    position: relative;
+    width: 99px;
+    height: 21px;
+    &__list {  
+        @extend %flx;
+    }
+
+    &__item {
+       margin-right: 23px;
+       @include lst-chld;
+    }
+    
+    // &__link {
+        
+    // }
+
+    &__icon {
+        margin-top: 5px;
+    }
+}
+// .icon {
+// }
+.msg-counter {
+    position: absolute;
+    border-radius: 50%;
+    display: block;
+    background: #E6C8B4;
+    width: 13px;
+    height: 13px;   
+    top: 0;
+    right: 35px;
+    font-size: 8px;
+    text-align: center;
+    color: #1B1A17;
+    line-height: 13px;
+}
+.main {
+    @extend %sz-pg, %leveler;
+}
+.link-form{   
+    @extend %stl-linkForm;
+}
+ /* ================Section Promo============== */
+.promo {
+    // @extend %vis-ast;
+    margin: 0 114px 0 120px;
+    background: url(./../img/Ellipse.png) no-repeat 55% 20%;
+    @extend %flx;
+		&__wrapper--left { 
+            margin-right: 55px;
+            // @extend %vis-ast;
+            @extend %vertical-leveler;
+		}
+        &__wrapper--right {
+            width: 744px;
+            position: relative;
+            // @extend %vis-ast;
+            @extend %vertical-leveler;
+            }
+
+    &__title {
+        width: 408px;
+        @extend %stl-tl;
+        font-size: 45px;
+        line-height: 60px;
+        @include bfr-ln;
+    }
+
+    &__sub-title {
+        margin-left: 65px;
+        width: 154px;
+        font-size: 30px;
+        line-height: 40px;  
+    }
+
+    &__description {
+        margin: 39px 0 64px 65px;
+        width: 258px;
+       @extend %stl-dscrptn;
+    }
+
+    &__link {
+        margin-left: 61px;
+        background: #444240;  
+    }
+
+    &__img {
+        width: 503px;
+        height: 804px;   
+        transform: rotate(-0.18deg);
+        margin-left: 79px;
+        // @extend %vis-ast;
+    }
+
+    &__prise {
+        position: absolute;
+        top: 149px;
+        left: 0px;
+        display: block;
+        @include afr-ln;
+        @extend %stl-prs;
+       
+    }
+
+    &__ruble {
+        margin-left: 7px;    
+    }
+
+    &__specifications {
+        position: absolute;
+        bottom: 143px;
+        left: 468px;
+        display: block;
+        @extend %stl-prs;
+        @include bfr-ln;
+    }
+}
+
+.ruble {
+        width: 9.6px;
+        height: 13px;   
+        display: inline-block;
+        background: url(./../img/ruble.svg) no-repeat;
+       
+}
+ /* ================Section Popular============== */
+.popular {
+    position: relative;
+    margin: 0 98px;
+    &__title {
+        margin-top: 79px;
+        @extend %stl-tl;
+        text-align: center;
+        font-weight: normal;        
+        font-size: 32px;
+        line-height: 43px;
+    }
+
+    &__show-more { 
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #444240;
+    border-bottom: 1px solid #C4C0B6;
+    padding-bottom: 11.5px;
+    position: absolute;
+    bottom: 578px;
+    right:0;
+    }
+
+    &__list {
+        @extend %flx;
+    }
+
+    &__item {
+       margin-right: 35px;
+       @include lst-chld;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        width: 370px;
+        height: 467px;
+        margin: 52px 0 86px 0;
+    }
+}
+.card { 
+    // @extend %vis-ast;
+ 
+    &__title {
+        @extend %stl-tl;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: rgba(27, 26, 23, 0.82);
+        margin: 40px 0 10px 40px; 
+        
+    }
+    
+
+    &__prise {
+        @extend %stl-prs;
+        font-size: 12px;
+        line-height: 16px;
+        margin-left: 40px;
+    }    
+    &__ruble {
+        margin-left: 6px;
+    }
+
+    &__img 
+        {width: 313px;
+        height: 313px;
+        background: url(./../img/Ellipse_watches.png) no-repeat center;
+         filter: drop-shadow(2px 2px 10px rgba(85, 82, 72, 0.23));
+        // @extend %vis-ast;
+        @extend %leveler;
+    }
+    &__link {
+    @include bfr-ln-lnk;
+    @extend %stl-tl;
+    font-size: 16px;
+    line-height: 21px;
+    margin: 0 0 39px 40px;
+    }
+
+}
+ /* ================Section Advantage============== */
+.advantage {
+    @extend %flx;
+        background:
+        url(./../img/lines_banner.png) right no-repeat,
+        url(./../img/background_banner_2.png) right no-repeat,
+        url(./../img/background_banner_1.png) left no-repeat;
+        background-size: contain;
+    &__left {
+        width: 468px;
+        padding: 52px 0 53px 177px;
+        // @extend %vis-ast;
+    }
+
+    &__img {
+        width: 521px;
+        height: 414px;
+        
+    }
+
+    &__scroll-controll {
+        position: absolute;
+       bottom: 21px;
+       left: 84px;
+    }
+
+    &__right { 
+        width: 898px;
+        position: relative;
+        // @extend %vis-ast;
+    }
+    &__wrapper{
+    width: 377px;
+    height: 519px;
+    margin-left: 299px;
+    border: 1px solid transparent; /* !Doesn't work without it. Why?  */
+   // @extend %vis-ast;
+    }
+    &__title {
+        margin-top: 140px;
+        @extend %stl-tl;
+    }
+
+    &__description {
+        width: 376px;
+        margin: 38px 0 45px 1px;
+    }
+
+    &__link {
+        display: block;
+        background-color: #D4B098;
+
+    }
+}
+.scroll-controll {
+    @extend %flx;
+    width: 63px;
+    height: 13px;
+    // &__btn {
+        
+    // }
+
+    &__position {
+        width: 13px;
+        height: 12px;
+        font-size: 12px;
+        line-height: 16px;
+        @extend %stl-prs;
+        @extend %leveler;
+        color: rgba(27, 26, 23, 0.82);
+    }
+}
+.btn {
+    width: 5px;
+    height: 10px;
+    // &__img {
+    // }
+}
+/* ================Section News============== */
+.news {
+    @extend %flx;
+    
+    &__left {
+    margin: 81px 91px 0 71px;
+    // @extend %vis-ast;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 27px;
+        margin: 40px 0 0 2px;
+    }
+    &__text--high {  
+        @extend %stl-tl;
+        width: 471px;
+        margin: 140px 0 0 0;
+    }
+
+    &__social-block {
+        margin-top: 118px;
+    }
+
+    &__right {
+        width: 629px;
+        display: grid;
+        margin: 81px 98px 90px;
+        gap: 10px;
+        grid-template-areas:
+        "a b"
+        "c b";  
+        // grid-template-columns: 242px 377px;
+        // grid-template-rows: 228px 222px;
+         // @extend %vis-ast;
+    }
+  
+	&__item{
+        @include abc;  
+	}
+
+    // &__link {
+    // }
+
+    // &__img {
+    // }
+}
+.social-block {
+    
+    width: 93px;
+    &__list {
+        @extend %flx;
+    }
+
+    &__item {
+        margin-right: 18px;
+        @include lst-chld;
+    }
+
+    // &__link {
+    // }
+
+    // &__img {
+    // }
+}
+/* ================FOOTER============== */
+.page-footer {
+    min-width: 1366px;
+    background-color: #444240;
+  
+  
+    &__column {
+         margin: 79px 0 67px 0;
+       
+    }
+
+    &__colomn--logo {
+        margin-top: 67px;
+        width: 160px;
+    }
+
+    &__logo {
+        margin-bottom: 23px; 
+        width: 130px;
+        height: 34px;
+    }
+
+    &__wrapper {
+        
+        @extend %leveler, %flx;
+        width: 998px;
+    }
+
+    &__column--about {
+        width: 123px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        color: #FFF;
+        margin-bottom: 33px;
+    }
+
+    // &__list {
+
+    // }
+
+    // &__item {
+         
+    // }
+
+    &__link {
+        font-size: 12px;
+        line-height: 14px;
+        color: rgba(255, 255, 255, 0.75);
+    }
+
+    &__column--buyers {
+        width: 181px;
+    }
+
+    &__column--delivery {
+        width: 180px;
+    }
+}
