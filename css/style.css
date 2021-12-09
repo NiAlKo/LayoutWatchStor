@@ -462,7 +462,7 @@ h6 {
 /* ================Section Promo============== */
 .promo {
   margin: 0 114px 0 120px;
-  background: url(./../img/Ellipse.png) no-repeat 55% 20%;
+  background: url(./../img/Ellipse.png) no-repeat 50% 20%;
 }
 
 .promo__wrapper--left {
