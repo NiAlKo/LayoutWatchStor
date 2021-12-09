@@ -2,20 +2,24 @@
 @import "mixin_sample";
 /* ================Section Promo============== */
 .promo {
+  position: relative;
   // @extend %vis-ast;
   margin: 0 114px 0 120px;
-  background: url(./../img/Ellipse.png) no-repeat 50% 20%;
+  background: url(./../img/Ellipse.png) no-repeat 55% 20%;
   @extend %flx;
+
   &__wrapper--left {
-    margin-right: 55px;
+    // margin-right: 134px;
     // @extend %vis-ast;
     @extend %vertical-leveler;
+    width: 408px;
   }
   &__wrapper--right {
-    width: 744px;
-    position: relative;
+    width: 503px;
+
+    margin-right: 199px;
     // @extend %vis-ast;
-    @extend %vertical-leveler;
+    // @extend %vertical-leveler;
   }
 
   &__title {
@@ -37,7 +41,7 @@
   }
 
   &__link {
-    @extend %stl-btn-prm;
+    display: block;
     margin-left: 61px;
     background: #444240;
   }
@@ -52,8 +56,8 @@
 
   &__prise {
     position: absolute;
-    top: 149px;
-    left: 0px;
+    top: 138px;
+    left: 438px;
     display: block;
     @include afr-ln;
     @extend %stl-prs-prm;
@@ -65,8 +69,8 @@
 
   &__specifications {
     position: absolute;
-    bottom: 143px;
-    left: 468px;
+    bottom: 122px;
+    right: 0;
     display: block;
     @extend %stl-prs-prm;
     @include bfr-ln;

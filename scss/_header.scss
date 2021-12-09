@@ -93,5 +93,5 @@
   @extend %sz-pg, %leveler;
 }
 .link-form {
-  @extend %stl-linkForm;
+  @extend %stl-linkForm, %stl-btn-prm;
 }
