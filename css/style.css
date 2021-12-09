@@ -126,7 +126,7 @@ h6 {
   font-display: swap;
 }
 
-.page-header, .main-nav, .main-nav__list, .user-nav__list, .promo, .popular__list, .advantage__wrapper, .scroll-controll, .news, .social-block__list, .page-footer__wrapper {
+.page-header, .main-nav, .main-nav__list, .user-nav__list, .promo, .popular__list, .advantage__wrapper, .advantage__content, .scroll-controll, .news, .social-block__list, .page-footer__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -260,7 +260,7 @@ h6 {
   line-height: 13px;
 }
 
-.page-header, .main-nav, .main-nav__list, .user-nav__list, .promo, .popular__list, .advantage__wrapper, .scroll-controll, .news, .social-block__list, .page-footer__wrapper {
+.page-header, .main-nav, .main-nav__list, .user-nav__list, .promo, .popular__list, .advantage__wrapper, .advantage__content, .scroll-controll, .news, .social-block__list, .page-footer__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -417,7 +417,7 @@ h6 {
   background: url(./../img/ruble.svg) no-repeat;
 }
 
-.page-header, .main-nav, .main-nav__list, .user-nav__list, .promo, .popular__list, .advantage__wrapper, .scroll-controll, .news, .social-block__list, .page-footer__wrapper {
+.page-header, .main-nav, .main-nav__list, .user-nav__list, .promo, .popular__list, .advantage__wrapper, .advantage__content, .scroll-controll, .news, .social-block__list, .page-footer__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -563,7 +563,7 @@ h6 {
   vertical-align: middle;
 }
 
-.page-header, .main-nav, .main-nav__list, .user-nav__list, .promo, .popular__list, .advantage__wrapper, .scroll-controll, .news, .social-block__list, .page-footer__wrapper {
+.page-header, .main-nav, .main-nav__list, .user-nav__list, .promo, .popular__list, .advantage__wrapper, .advantage__content, .scroll-controll, .news, .social-block__list, .page-footer__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -620,27 +620,36 @@ h6 {
 }
 
 /* ================Section Advantage============== */
-.advantage__bg-left {
-  position: absolute;
+.advantage__wrapper {
+  position: relative;
   top: 0;
-  left: 0;
+}
+
+.advantage__bg-left {
   width: 468px;
   height: 519px;
   background-color: #f7f5ef;
 }
 
 .advantage__bg-right {
-  position: absolute;
-  top: 0;
-  right: 0;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   width: 898px;
   height: 519px;
   background: #fdfdfb url(./../img/lines_banner.png) no-repeat right;
 }
 
+.advantage__content {
+  position: absolute;
+  top: 0;
+}
+
 .advantage__left {
-  z-index: 10;
   margin: 52px 0 53px 177px;
+}
+
+.advantage__right {
+  margin-left: 69px;
 }
 
 .advantage__img {
@@ -652,16 +661,6 @@ h6 {
   position: absolute;
   bottom: 21px;
   left: 552px;
-}
-
-.advantage__right {
-  z-index: 10;
-  margin-right: 222px;
-}
-
-.advantage__wrapper {
-  position: relative;
-  top: 0;
 }
 
 .advantage__title {
@@ -696,7 +695,7 @@ h6 {
   height: 10px;
 }
 
-.page-header, .main-nav, .main-nav__list, .user-nav__list, .promo, .popular__list, .advantage__wrapper, .scroll-controll, .news, .social-block__list, .page-footer__wrapper {
+.page-header, .main-nav, .main-nav__list, .user-nav__list, .promo, .popular__list, .advantage__wrapper, .advantage__content, .scroll-controll, .news, .social-block__list, .page-footer__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

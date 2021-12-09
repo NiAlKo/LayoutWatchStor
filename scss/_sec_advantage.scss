@@ -2,27 +2,36 @@
 
 /* ================Section Advantage============== */
 .advantage {
-  &__bg-left {
-    position: absolute;
+  &__wrapper {
+    @extend %flx;
+    position: relative;
     top: 0;
-    left: 0;
+  }
+
+  &__bg-left {
     width: 468px;
     height: 519px;
     background-color: #f7f5ef;
   }
 
   &__bg-right {
-    position: absolute;
-    top: 0;
-    right: 0;
+    flex-wrap: nowrap;
     width: 898px;
     height: 519px;
     background: #fdfdfb url(./../img/lines_banner.png) no-repeat right;
   }
+  &__content {
+    position: absolute;
+    top: 0;
+    @extend %flx;
+  }
 
   &__left {
-    z-index: 10;
     margin: 52px 0 53px 177px;
+  }
+
+  &__right {
+    margin-left: 69px;
   }
 
   &__img {
@@ -34,16 +43,6 @@
     position: absolute;
     bottom: 21px;
     left: 552px;
-  }
-
-  &__right {
-    z-index: 10;
-    margin-right: 222px;
-  }
-  &__wrapper {
-    position: relative;
-    top: 0;
-    @extend %flx;
   }
 
   &__title {
