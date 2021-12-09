@@ -89,7 +89,7 @@ h6 {
 @font-face {
   font-family: "Prata";
   src: local("Prata Regular"), local("Prata-Regular"), url("./../sours/fonts/Prata/Prata-Regular.woff2") format("woff2");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -97,7 +97,7 @@ h6 {
 @font-face {
   font-family: "Roboto";
   src: local("Roboto Bold"), local("Roboto-Bold"), url("./../sours/fonts/Roboto/Roboto-Bold.woff2") format("woff2");
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -113,7 +113,15 @@ h6 {
 @font-face {
   font-family: "Roboto";
   src: local("Roboto"), local("Roboto-Regular"), url("./../sours/fonts/Roboto/Roboto-Regular.woff2") format("woff2");
-  font-weight: normal;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), local("Roboto-Light"), url("./../sours/fonts/Roboto/Roboto-Light.woff2") format("woff2");
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
@@ -121,7 +129,7 @@ h6 {
 @font-face {
   font-family: "Playfair Display";
   src: local("Playfair Display Regular"), local("PlayfairDisplay-Regular"), url("./../sours/fonts/Playfair_Display/PlayfairDisplay-Regular.woff2") format("woff2");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -135,7 +143,7 @@ h6 {
           justify-content: space-between;
 }
 
-.page-header, .main, .card__img, .scroll-controll__position, .page-footer__wrapper {
+.page-header, .main, .card__picture, .scroll-controll__position, .page-footer__wrapper {
   margin: 0 auto;
 }
 
@@ -147,39 +155,109 @@ h6 {
   width: 1366px;
 }
 
-.promo__title, .popular__title, .card__title, .card__link, .advantage__title, .news__text--high {
+.main-nav__link {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 22px;
+  color: #555248;
+}
+
+.promo__prise, .promo__specifications {
+  font-family: "Prata";
+  font-size: 16px;
+  line-height: 22px;
+  color: #1b1a17;
+}
+
+.promo__title {
   font-family: "Playfair Display";
-  font-weight: 400;
+  font-size: 45px;
+  line-height: 60px;
+  color: #1b1a17;
+}
+
+.promo__sub-title {
+  font-family: "Playfair Display";
+  font-size: 30px;
+  line-height: 40px;
+  color: #1b1a17;
+}
+
+.promo__description {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(27, 26, 23, 0.82);
+}
+
+.popular__title, .advantage__title, .news__text--high {
+  font-family: "Playfair Display";
   font-size: 32px;
   line-height: 43px;
   color: #1b1a17;
 }
 
-.promo__prise, .promo__specifications, .card__prise, .scroll-controll__position {
-  font-family: "Prata";
-  font-weight: 400;
+.popular__show-more {
+  font-family: "Roboto";
+  font-weight: 500;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 19px;
+  color: #444240;
+}
+
+.promo__link, .advantage__link {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.card__title {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(27, 26, 23, 0.82);
+}
+
+.card__prise, .scroll-controll__position {
+  font-family: "Prata";
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(27, 26, 23, 0.82);
+}
+
+.card__link {
+  font-family: "Playfair Display";
+  font-size: 16px;
+  line-height: 21px;
   color: #1b1a17;
+}
+
+.page-footer__title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 27px;
+  color: #fff;
+}
+
+.page-footer__link {
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .link-form {
   width: 205px;
   height: 64px;
   padding: 26px 38px;
-  color: #fff;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-
-.promo__description {
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 21px;
-  color: rgba(27, 26, 23, 0.82);
 }
 
 /* ================HEADER============== */
@@ -216,12 +294,6 @@ h6 {
   margin-right: 0px;
 }
 
-.main-nav__link {
-  font-size: 14px;
-  line-height: 16px;
-  color: #555248;
-}
-
 .logo__img {
   width: 104px;
   height: 26px;
@@ -248,7 +320,7 @@ h6 {
 .msg-counter {
   position: absolute;
   border-radius: 50%;
-  display: block;
+  display: inline-block;
   background: #e6c8b4;
   width: 13px;
   height: 13px;
@@ -258,6 +330,7 @@ h6 {
   text-align: center;
   color: #1b1a17;
   line-height: 13px;
+  vertical-align: middle;
 }
 
 .page-header, .main-nav, .main-nav__list, .user-nav__list, .promo, .popular__list, .advantage__wrapper, .advantage__content, .scroll-controll, .news, .social-block__list, .page-footer__wrapper {
@@ -269,7 +342,7 @@ h6 {
           justify-content: space-between;
 }
 
-.page-header, .main, .card__img, .scroll-controll__position, .page-footer__wrapper {
+.page-header, .main, .card__picture, .scroll-controll__position, .page-footer__wrapper {
   margin: 0 auto;
 }
 
@@ -281,39 +354,109 @@ h6 {
   width: 1366px;
 }
 
-.promo__title, .popular__title, .card__title, .card__link, .advantage__title, .news__text--high {
+.main-nav__link {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 22px;
+  color: #555248;
+}
+
+.promo__prise, .promo__specifications {
+  font-family: "Prata";
+  font-size: 16px;
+  line-height: 22px;
+  color: #1b1a17;
+}
+
+.promo__title {
   font-family: "Playfair Display";
-  font-weight: 400;
+  font-size: 45px;
+  line-height: 60px;
+  color: #1b1a17;
+}
+
+.promo__sub-title {
+  font-family: "Playfair Display";
+  font-size: 30px;
+  line-height: 40px;
+  color: #1b1a17;
+}
+
+.promo__description {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(27, 26, 23, 0.82);
+}
+
+.popular__title, .advantage__title, .news__text--high {
+  font-family: "Playfair Display";
   font-size: 32px;
   line-height: 43px;
   color: #1b1a17;
 }
 
-.promo__prise, .promo__specifications, .card__prise, .scroll-controll__position {
-  font-family: "Prata";
-  font-weight: 400;
+.popular__show-more {
+  font-family: "Roboto";
+  font-weight: 500;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 19px;
+  color: #444240;
+}
+
+.promo__link, .advantage__link {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.card__title {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(27, 26, 23, 0.82);
+}
+
+.card__prise, .scroll-controll__position {
+  font-family: "Prata";
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(27, 26, 23, 0.82);
+}
+
+.card__link {
+  font-family: "Playfair Display";
+  font-size: 16px;
+  line-height: 21px;
   color: #1b1a17;
+}
+
+.page-footer__title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 27px;
+  color: #fff;
+}
+
+.page-footer__link {
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .link-form {
   width: 205px;
   height: 64px;
   padding: 26px 38px;
-  color: #fff;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-
-.promo__description {
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 21px;
-  color: rgba(27, 26, 23, 0.82);
 }
 
 /* ================Section Promo============== */
@@ -333,8 +476,6 @@ h6 {
 
 .promo__title {
   width: 408px;
-  font-size: 45px;
-  line-height: 60px;
 }
 
 .promo__title::before {
@@ -350,8 +491,6 @@ h6 {
 .promo__sub-title {
   margin-left: 65px;
   width: 154px;
-  font-size: 30px;
-  line-height: 40px;
 }
 
 .promo__description {
@@ -426,7 +565,7 @@ h6 {
           justify-content: space-between;
 }
 
-.page-header, .main, .card__img, .scroll-controll__position, .page-footer__wrapper {
+.page-header, .main, .card__picture, .scroll-controll__position, .page-footer__wrapper {
   margin: 0 auto;
 }
 
@@ -438,39 +577,109 @@ h6 {
   width: 1366px;
 }
 
-.promo__title, .popular__title, .card__title, .card__link, .advantage__title, .news__text--high {
+.main-nav__link {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 22px;
+  color: #555248;
+}
+
+.promo__prise, .promo__specifications {
+  font-family: "Prata";
+  font-size: 16px;
+  line-height: 22px;
+  color: #1b1a17;
+}
+
+.promo__title {
   font-family: "Playfair Display";
-  font-weight: 400;
+  font-size: 45px;
+  line-height: 60px;
+  color: #1b1a17;
+}
+
+.promo__sub-title {
+  font-family: "Playfair Display";
+  font-size: 30px;
+  line-height: 40px;
+  color: #1b1a17;
+}
+
+.promo__description {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(27, 26, 23, 0.82);
+}
+
+.popular__title, .advantage__title, .news__text--high {
+  font-family: "Playfair Display";
   font-size: 32px;
   line-height: 43px;
   color: #1b1a17;
 }
 
-.promo__prise, .promo__specifications, .card__prise, .scroll-controll__position {
-  font-family: "Prata";
-  font-weight: 400;
+.popular__show-more {
+  font-family: "Roboto";
+  font-weight: 500;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 19px;
+  color: #444240;
+}
+
+.promo__link, .advantage__link {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.card__title {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(27, 26, 23, 0.82);
+}
+
+.card__prise, .scroll-controll__position {
+  font-family: "Prata";
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(27, 26, 23, 0.82);
+}
+
+.card__link {
+  font-family: "Playfair Display";
+  font-size: 16px;
+  line-height: 21px;
   color: #1b1a17;
+}
+
+.page-footer__title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 27px;
+  color: #fff;
+}
+
+.page-footer__link {
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .link-form {
   width: 205px;
   height: 64px;
   padding: 26px 38px;
-  color: #fff;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-
-.promo__description {
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 21px;
-  color: rgba(27, 26, 23, 0.82);
 }
 
 /* ================Section Popular============== */
@@ -488,10 +697,6 @@ h6 {
 }
 
 .popular__show-more {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  color: #444240;
   border-bottom: 1px solid #c4c0b6;
   padding-bottom: 11.5px;
   position: absolute;
@@ -515,23 +720,19 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 370px;
-  height: 467px;
   margin: 52px 0 86px 0;
 }
 
+.card {
+  background-color: #fdfdfb;
+  width: 370px;
+}
+
 .card__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: rgba(27, 26, 23, 0.82);
   margin: 40px 0 10px 40px;
 }
 
 .card__prise {
-  font-size: 12px;
-  line-height: 16px;
   margin-left: 40px;
 }
 
@@ -539,18 +740,25 @@ h6 {
   margin-left: 6px;
 }
 
+.card__picture {
+  background: url(./../img/Ellipse_watches.png) no-repeat center;
+}
+
 .card__img {
   width: 313px;
   height: 313px;
-  background: url(./../img/Ellipse_watches.png) no-repeat center;
   -webkit-filter: drop-shadow(2px 2px 10px rgba(85, 82, 72, 0.23));
           filter: drop-shadow(2px 2px 10px rgba(85, 82, 72, 0.23));
 }
 
+.card__img:hover {
+  -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+          transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
 .card__link {
-  font-size: 16px;
-  line-height: 21px;
-  margin: 0 0 39px 40px;
+  margin-left: 40px;
+  padding-bottom: 39px;
 }
 
 .card__link::before {
@@ -563,6 +771,11 @@ h6 {
   vertical-align: middle;
 }
 
+.card:hover {
+  -webkit-filter: drop-shadow(2px 2px 10px rgba(85, 82, 72, 0.23));
+          filter: drop-shadow(2px 2px 10px rgba(85, 82, 72, 0.23));
+}
+
 .page-header, .main-nav, .main-nav__list, .user-nav__list, .promo, .popular__list, .advantage__wrapper, .advantage__content, .scroll-controll, .news, .social-block__list, .page-footer__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -572,7 +785,7 @@ h6 {
           justify-content: space-between;
 }
 
-.page-header, .main, .card__img, .scroll-controll__position, .page-footer__wrapper {
+.page-header, .main, .card__picture, .scroll-controll__position, .page-footer__wrapper {
   margin: 0 auto;
 }
 
@@ -584,39 +797,109 @@ h6 {
   width: 1366px;
 }
 
-.promo__title, .popular__title, .card__title, .card__link, .advantage__title, .news__text--high {
+.main-nav__link {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 22px;
+  color: #555248;
+}
+
+.promo__prise, .promo__specifications {
+  font-family: "Prata";
+  font-size: 16px;
+  line-height: 22px;
+  color: #1b1a17;
+}
+
+.promo__title {
   font-family: "Playfair Display";
-  font-weight: 400;
+  font-size: 45px;
+  line-height: 60px;
+  color: #1b1a17;
+}
+
+.promo__sub-title {
+  font-family: "Playfair Display";
+  font-size: 30px;
+  line-height: 40px;
+  color: #1b1a17;
+}
+
+.promo__description {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(27, 26, 23, 0.82);
+}
+
+.popular__title, .advantage__title, .news__text--high {
+  font-family: "Playfair Display";
   font-size: 32px;
   line-height: 43px;
   color: #1b1a17;
 }
 
-.promo__prise, .promo__specifications, .card__prise, .scroll-controll__position {
-  font-family: "Prata";
-  font-weight: 400;
+.popular__show-more {
+  font-family: "Roboto";
+  font-weight: 500;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 19px;
+  color: #444240;
+}
+
+.promo__link, .advantage__link {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.card__title {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(27, 26, 23, 0.82);
+}
+
+.card__prise, .scroll-controll__position {
+  font-family: "Prata";
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(27, 26, 23, 0.82);
+}
+
+.card__link {
+  font-family: "Playfair Display";
+  font-size: 16px;
+  line-height: 21px;
   color: #1b1a17;
+}
+
+.page-footer__title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 27px;
+  color: #fff;
+}
+
+.page-footer__link {
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .link-form {
   width: 205px;
   height: 64px;
   padding: 26px 38px;
-  color: #fff;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-
-.promo__description {
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 21px;
-  color: rgba(27, 26, 23, 0.82);
 }
 
 /* ================Section Advantage============== */
@@ -704,7 +987,7 @@ h6 {
           justify-content: space-between;
 }
 
-.page-header, .main, .card__img, .scroll-controll__position, .page-footer__wrapper {
+.page-header, .main, .card__picture, .scroll-controll__position, .page-footer__wrapper {
   margin: 0 auto;
 }
 
@@ -716,39 +999,109 @@ h6 {
   width: 1366px;
 }
 
-.promo__title, .popular__title, .card__title, .card__link, .advantage__title, .news__text--high {
+.main-nav__link {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 22px;
+  color: #555248;
+}
+
+.promo__prise, .promo__specifications {
+  font-family: "Prata";
+  font-size: 16px;
+  line-height: 22px;
+  color: #1b1a17;
+}
+
+.promo__title {
   font-family: "Playfair Display";
-  font-weight: 400;
+  font-size: 45px;
+  line-height: 60px;
+  color: #1b1a17;
+}
+
+.promo__sub-title {
+  font-family: "Playfair Display";
+  font-size: 30px;
+  line-height: 40px;
+  color: #1b1a17;
+}
+
+.promo__description {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(27, 26, 23, 0.82);
+}
+
+.popular__title, .advantage__title, .news__text--high {
+  font-family: "Playfair Display";
   font-size: 32px;
   line-height: 43px;
   color: #1b1a17;
 }
 
-.promo__prise, .promo__specifications, .card__prise, .scroll-controll__position {
-  font-family: "Prata";
-  font-weight: 400;
+.popular__show-more {
+  font-family: "Roboto";
+  font-weight: 500;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 19px;
+  color: #444240;
+}
+
+.promo__link, .advantage__link {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.card__title {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(27, 26, 23, 0.82);
+}
+
+.card__prise, .scroll-controll__position {
+  font-family: "Prata";
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(27, 26, 23, 0.82);
+}
+
+.card__link {
+  font-family: "Playfair Display";
+  font-size: 16px;
+  line-height: 21px;
   color: #1b1a17;
+}
+
+.page-footer__title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 27px;
+  color: #fff;
+}
+
+.page-footer__link {
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .link-form {
   width: 205px;
   height: 64px;
   padding: 26px 38px;
-  color: #fff;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-
-.promo__description {
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 21px;
-  color: rgba(27, 26, 23, 0.82);
 }
 
 /* ================Section News============== */
@@ -757,8 +1110,6 @@ h6 {
 }
 
 .news__text {
-  font-size: 16px;
-  line-height: 27px;
   margin: 40px 0 0 2px;
 }
 
@@ -841,19 +1192,7 @@ h6 {
 }
 
 .page-footer__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  color: #fff;
   margin-bottom: 33px;
-}
-
-.page-footer__link {
-  font-size: 12px;
-  line-height: 14px;
-  color: rgba(255, 255, 255, 0.75);
 }
 
 .page-footer__column--buyers {

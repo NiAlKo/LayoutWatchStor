@@ -47,7 +47,7 @@
 
   &__title {
     margin-top: 140px;
-    @extend %stl-tl;
+    @extend %stl-other-tl;
   }
 
   &__description {
@@ -58,6 +58,7 @@
   &__link {
     display: block;
     background-color: #d4b098;
+    @extend %stl-btn-prm;
   }
 }
 .scroll-controll {
@@ -72,7 +73,7 @@
     height: 12px;
     font-size: 12px;
     line-height: 16px;
-    @extend %stl-prs, %leveler;
+    @extend %stl-prs-crd, %leveler;
     color: rgba(27, 26, 23, 0.82);
   }
 }

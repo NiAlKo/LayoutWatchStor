@@ -16,11 +16,13 @@
   display: flex;
   justify-content: space-between;
 }
+
 // flex-center
 // %flx-c {
 //   display: flex;
 //   justify-content: center;
 // }
+
 // level-align
 %leveler {
   margin: 0 auto;
@@ -33,38 +35,113 @@
 %sz-pg {
   width: 1366px;
 }
-// style-title Playfair Display
-%stl-tl {
-  font-family: "Playfair Display";
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 43px;
-  color: #1b1a17;
+
+// style menu
+%stl-mn {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 22px;
+  color: #555248;
 }
-// style title Prta
-%stl-prs {
+
+// style prise-promo
+%stl-prs-prm {
   font-family: "Prata";
-  font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: #1b1a17;
 }
-// style link
-%stl-linkForm {
-  width: 205px;
-  height: 64px;
-  padding: 26px 38px;
-  color: #fff;
+// style title-promo
+%stl-tl-prm {
+  font-family: "Playfair Display";
+  font-size: 45px;
+  line-height: 60px;
+  color: #1b1a17;
+}
+// style sub-title-promo
+%stl-sb-tl-prm {
+  font-family: "Playfair Display";
+  font-size: 30px;
+  line-height: 40px;
+  color: #1b1a17;
+}
+// style description
+%stl-dscrptn {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(27, 26, 23, 0.82);
+}
+// style other-title Playfair Display
+%stl-other-tl {
+  font-family: "Playfair Display";
+  font-size: 32px;
+  line-height: 43px;
+  color: #1b1a17;
+}
+// style btn-show-more Roboto Bold
+%stl-btn-shw-mr {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #444240;
+}
+
+// style btn promo/advantage
+%stl-btn-prm {
+  font-family: "Roboto";
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  color: #fff;
 }
-// style decription
-%stl-dscrptn {
-  font-weight: 300;
+//  style title card
+%stl-ttl-crd {
+  font-family: "Playfair Display";
+  font-weight: 700;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
   color: rgba(27, 26, 23, 0.82);
+}
+//  style prise card/scroll_position cards
+%stl-prs-crd {
+  font-family: "Prata";
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(27, 26, 23, 0.82);
+}
+//  style link cards
+%stl-lnk-crd {
+  font-family: "Playfair Display";
+  font-size: 16px;
+  line-height: 21px;
+  color: #1b1a17;
+}
+
+// style title-menu-footer
+%stl-ttl-mn-ftr {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 27px;
+  color: #fff;
+}
+// style link-footer
+%stl-lnk-ftr {
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+// style link
+%stl-linkForm {
+  width: 205px;
+  height: 64px;
+  padding: 26px 38px;
 }

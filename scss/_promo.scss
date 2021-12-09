@@ -20,17 +20,14 @@
 
   &__title {
     width: 408px;
-    @extend %stl-tl;
-    font-size: 45px;
-    line-height: 60px;
+    @extend %stl-tl-prm;
     @include bfr-ln;
   }
 
   &__sub-title {
     margin-left: 65px;
     width: 154px;
-    font-size: 30px;
-    line-height: 40px;
+    @extend %stl-sb-tl-prm;
   }
 
   &__description {
@@ -40,6 +37,7 @@
   }
 
   &__link {
+    @extend %stl-btn-prm;
     margin-left: 61px;
     background: #444240;
   }
@@ -58,7 +56,7 @@
     left: 0px;
     display: block;
     @include afr-ln;
-    @extend %stl-prs;
+    @extend %stl-prs-prm;
   }
 
   &__ruble {
@@ -70,7 +68,7 @@
     bottom: 143px;
     left: 468px;
     display: block;
-    @extend %stl-prs;
+    @extend %stl-prs-prm;
     @include bfr-ln;
   }
 }

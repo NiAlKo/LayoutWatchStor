@@ -28,12 +28,7 @@
   }
 
   &__title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-    color: #fff;
+    @extend %stl-ttl-mn-ftr;
     margin-bottom: 33px;
   }
 
@@ -46,9 +41,7 @@
   // }
 
   &__link {
-    font-size: 12px;
-    line-height: 14px;
-    color: rgba(255, 255, 255, 0.75);
+    @extend %stl-lnk-ftr;
   }
 
   &__column--buyers {

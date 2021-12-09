@@ -10,12 +10,10 @@
   }
 
   &__text {
-    font-size: 16px;
-    line-height: 27px;
     margin: 40px 0 0 2px;
   }
   &__text--high {
-    @extend %stl-tl;
+    @extend %stl-other-tl;
     width: 471px;
     margin: 140px 0 0 0;
   }
