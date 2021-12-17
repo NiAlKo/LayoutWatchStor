@@ -64,9 +64,9 @@
     filter: drop-shadow(2px 2px 10px rgba(85, 82, 72, 0.23));
     // @extend %vis-ast;
   }
-  &__img:hover {
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-  }
+  // &__img:hover {
+  //   transform: matrix(-1, 0, 0, 1, 0, 0);
+  // }
   &__link {
     @include bfr-ln-lnk;
     @extend %stl-lnk-crd;
